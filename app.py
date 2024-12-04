@@ -11,7 +11,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.stattools import adfuller
 from scipy import stats
 
-st.title("Forecasting Penjualan AOKA")
+st.title("Aplikasi Forecasting Penjualan")
 st.sidebar.header("Upload Data")
 
 # Upload file
@@ -37,8 +37,8 @@ if uploaded_file:
     # Menampilkan grafik data awal
     st.subheader("Grafik Penjualan")
     fig, ax = plt.subplots(figsize=(8, 3))
-    plt.plot(data.index, data['JML_TERJUAL'], label='Penjualan AOKA')
-    plt.title('Penjualan AOKA')
+    plt.plot(data.index, data['JML_TERJUAL'], label='Penjualan')
+    plt.title('Penjualan')
     plt.xlabel('Tanggal')
     plt.ylabel('Jumlah Terjual')
     plt.legend()
